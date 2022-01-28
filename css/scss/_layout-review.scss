@@ -1,0 +1,121 @@
+.review {
+  display: flex;
+  flex-direction: column;
+
+  &__post {
+    display: flex;
+    flex-direction: row;
+    margin: 13.9rem 10% 23.2rem 10%;
+
+    @media ($desctop) {
+      margin: 13.9rem 8% 15.2rem 8%;
+    }
+
+    @media ($tablet) {
+      margin: 13.9rem 5% 9.2rem 5%;
+    }
+
+    @media ($mobile) {
+      flex-direction: column;
+      margin: 7.9rem 5% 5.2rem 5%;
+    }
+
+    &-item {
+      padding-right: 6.2rem;
+
+      @media ($mobile) {
+        padding-right: 0rem;
+      }
+
+      &__title {
+        font-family: $beautifulFont;
+        font-size: 4.2rem;
+        line-height: 0.79;
+        text-align: left;
+        color: $black;
+        margin-bottom: 3.7rem;
+
+        @media ($desctop) {
+          font-size: 3.8rem;
+        }
+
+        @media ($tablet) {
+          font-size: 2.9rem;
+        }
+
+        @media ($mobile) {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+      }
+      &__description {
+        font-family: $mainFont;
+        font-size: 1.9rem;
+        line-height: 1.32;
+        text-align: left;
+        color: $charcoal-grey;
+
+        @media ($mobile) {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+
+    &-item:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__content {
+    margin: 0 20% 18.5rem 20%;
+
+    @media ($desctop) {
+      margin: 0 15% 12.5rem 15%;
+    }
+
+    @media ($tablet) {
+      margin: 0 10% 8.5rem 10%;
+    }
+
+    @media ($mobile) {
+      margin: 0 5% 4.5rem 5%;
+    }
+
+    &-description {
+      font-family: $mainFont;
+      font-size: 2.5rem;
+      text-align: center;
+      color: $greyish-brown;
+      margin-bottom: 5.6rem;
+
+      @media ($mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 2.6rem;
+      }
+    }
+
+    &-link {
+      font-family: $mainFont;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.57;
+      text-align: center;
+      color: $greyish-brown;
+
+      a {
+        color: $greyish-brown;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $green;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $greyish-brown;
+      }
+    }
+  }
+}

@@ -1,0 +1,241 @@
+@mixin h1() {
+  font-family: $beautifulFont;
+  font-size: 9.1rem;
+  text-shadow: 0 0.5rem 0.5rem rgba(84, 82, 79, 0.22);
+  color: $white;
+
+  @media ($desctop) {
+    font-size: 5rem;
+  }
+
+  @media ($mobile) {
+    font-size: 4rem;
+  }
+}
+
+@mixin divider() {
+  height: 3rem;
+}
+
+@mixin button-dark() {
+  border-radius: 12% / 50%;
+  border: none;
+  font-size: 2.4rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  background-color: $black;
+  color: $white;
+  padding: 1.4rem 3.6rem;
+  letter-spacing: 0.46rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+    color: $black;
+  }
+}
+
+@mixin button-gray() {
+  border-radius: 17% / 50%;
+  border: none;
+  font-size: 2.4rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  background-color: $greyish-brown;
+  color: $white;
+  padding: 2.4rem 4.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+    color: $black;
+  }
+}
+
+@mixin button-light() {
+  border-radius: 12% / 50%;
+  border: none;
+  font-size: 2.4rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  background-color: $white;
+  color: $charcoal-grey;
+  padding: 1.4rem 3.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+@mixin input__search() {
+  width: 18.3rem;
+  height: 5.1rem;
+  border-radius: 12% / 50%;
+  border: none;
+  font-size: 2.4rem;
+  padding: 0 5.5rem 0 2rem;
+
+  // margin-right: 5.5rem;
+  background: url(../../image/header-research.png) no-repeat right;
+  background-size: 2.5rem;
+  background-position: calc(
+    100% - 2.5rem
+  ); // choose the correct position of the icon search
+  background-color: $white;
+
+  &:focus {
+    outline-color: $green;
+  }
+
+  &:hover {
+    background-color: darken($white, 15%);
+  }
+}
+
+@mixin post-item() {
+  padding-top: 3rem;
+  width: 30rem;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  @media ($desctop) {
+    width: 29rem;
+  }
+
+  @media ($tablet) {
+    width: 27rem;
+  }
+
+  @media ($mobile) {
+    width: 25rem;
+  }
+
+  &:hover {
+    background-color: $chocolate;
+    background-image: linear-gradient(
+      45deg,
+      #802086 0%,
+      #50db7a 52%,
+      #250846 90%
+    );
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: $white;
+
+    * {
+      // assign for child
+      color: $white;
+    }
+  }
+
+  &__image {
+    height: 28rem;
+    text-align: center;
+
+    @media ($desctop) {
+      height: 27rem;
+    }
+
+    @media ($tablet) {
+      height: 25rem;
+    }
+
+    @media ($mobile) {
+      height: 23rem;
+    }
+  }
+
+  &__text {
+    width: calc(30rem - 3rem);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media ($desctop) {
+      width: calc(29rem - 3rem);
+    }
+
+    @media ($tablet) {
+      width: calc(27rem - 3rem);
+    }
+
+    @media ($mobile) {
+      width: calc(25rem - 3rem);
+    }
+
+    &-title {
+      font-size: 2.9rem;
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 2.1rem;
+
+      @media ($mobile) {
+        font-size: 2.4rem;
+      }
+    }
+    &-description {
+      font-size: 2.4rem;
+      color: $black;
+
+      @media ($mobile) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@mixin subscribe() {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  &__input {
+    width: 65.9rem;
+    height: 6.3rem;
+    border-radius: 4rem / 5rem;
+    border: none;
+    font-size: 2.4rem;
+    padding: 2.1rem 9.5rem 2.1rem 2.6rem;
+    background-color: $white;
+
+    &:focus {
+      outline-color: $green;
+    }
+
+    &:hover {
+      background-color: darken($white, 15%);
+    }
+
+    @media ($mobile) {
+      width: 95%;
+      padding: 2.1rem 2.6rem 2.1rem 2.6rem;
+    }
+  }
+
+  @media ($mobile) {
+    @media ($mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .button-gray {
+    position: relative;
+    right: 7.5rem;
+    bottom: 0.5rem;
+    margin-right: -7.5rem;
+    cursor: pointer;
+
+    @media ($mobile) {
+      right: 0rem;
+      margin-right: 0rem;
+      top: 1.5rem;
+    }
+  }
+}

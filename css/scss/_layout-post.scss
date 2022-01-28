@@ -1,0 +1,82 @@
+.post {
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    margin-top: 3.5rem;
+    font-family: $beautifulFont;
+    font-size: 7.55rem;
+    text-align: center;
+    color: $dark-grey;
+
+    @media ($tablet) {
+      font-size: 6.55rem;
+    }
+
+    @media ($mobile) {
+      font-size: 2.75rem;
+    }
+  }
+
+  &__description {
+    margin: 3.8rem 23% 9.7rem 23%;
+    font-family: $mainFont;
+    font-size: 2.7rem;
+    text-align: center;
+    color: $charcoal-grey;
+
+    @media ($desctop) {
+      margin: 0rem 10% 5.7rem 10%;
+    }
+
+    @media ($tablet) {
+      margin: 0rem 10% 3.7rem 10%;
+    }
+
+    @media ($mobile) {
+      margin: 0rem 10% 1.7rem 10%;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 8%;
+
+    @media ($desctop) {
+      margin: 0 2%;
+    }
+
+    @media ($tablet) {
+      margin: 0 2%;
+    }
+
+    @media ($mobile) {
+      margin: 0 1%;
+    }
+  }
+
+  &__button {
+    text-align: center;
+    margin: 12.2rem 0 5rem 0;
+
+    @media ($desctop) {
+      margin: 8.2rem 0 5rem 0;
+    }
+
+    @media ($tablet) {
+      margin: 6.2rem 0 5rem 0;
+    }
+
+    @media ($mobile) {
+      margin: 4.2rem 0 5rem 0;
+    }
+  }
+}

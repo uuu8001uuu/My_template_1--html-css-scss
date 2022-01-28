@@ -1,0 +1,115 @@
+.interesting {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.4rem;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12.5rem;
+
+    @media ($mobile) {
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+
+    &-image {
+      width: 50%;
+      margin: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-content {
+      justify-content: flex-start;
+      max-width: 53.3rem;
+      margin: 0 4.1rem;
+
+      @media ($desctop) {
+        max-width: 50.3rem;
+      }
+
+      @media ($tablet) {
+        max-width: 43.3rem;
+      }
+
+      @media ($mobile) {
+        max-width: 32rem;
+      }
+
+      &__title {
+        font-family: $mainFont;
+        font-size: 5.8rem;
+        font-weight: bold;
+        text-align: left;
+        color: $dark-grey;
+        margin-bottom: 5.2rem;
+
+        @media ($desctop) {
+          font-size: 5rem;
+        }
+
+        @media ($tablet) {
+          font-size: 5rem;
+        }
+
+        @media ($mobile) {
+          font-size: 2.75rem;
+          margin-bottom: 2.2rem;
+        }
+      }
+
+      &__description {
+        font-family: $mainFont;
+        font-size: 2.9rem;
+        text-align: left;
+        color: $dark-grey;
+        margin-bottom: 5.3rem;
+
+        @media ($desctop) {
+          font-size: 2.7rem;
+        }
+
+        @media ($tablet) {
+          font-size: 2.5rem;
+        }
+
+        @media ($mobile) {
+          font-size: 1.8rem;
+          margin-bottom: 2.3rem;
+        }
+      }
+
+      &__button {
+        @media ($mobile) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  &__item:last-child {
+    // to mirror block
+    flex-direction: row-reverse;
+    margin-bottom: 5.6rem;
+
+    @media ($mobile) {
+      flex-direction: column;
+    }
+  }
+}
+
+.button-dark {
+  @media ($mobile) {
+    font-size: 1.8rem;
+  }
+}

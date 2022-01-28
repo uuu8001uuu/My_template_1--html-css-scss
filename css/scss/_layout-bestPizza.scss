@@ -1,0 +1,80 @@
+.bestPizza {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 145rem;
+  margin: 0 auto;
+  background: url("../../image/header-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    position: relative;
+
+    &-title {
+      margin: 8rem 12rem 0 0rem;
+      font-family: $beautifulFont;
+      font-size: 5.8rem;
+      text-align: center;
+      color: $off-white;
+
+      @media ($desctop) {
+        font-size: 4.6rem;
+      }
+
+      @media ($tablet) {
+        font-size: 3.6rem;
+      }
+
+      @media ($mobile) {
+        font-size: 2.75rem;
+        margin: 8rem 0 0 0rem;
+      }
+    }
+
+    &-description {
+      font-family: $secondaryFont;
+      font-size: 2.5rem;
+      line-height: 1.32;
+      text-align: center;
+      color: $off-white;
+      margin: 0 22%;
+
+      @media ($mobile) {
+        font-size: 1.8rem;
+        margin: 0 2%;
+      }
+    }
+
+    &-rectangle {
+      margin: 4.1rem auto 0 auto;
+      width: 16.4rem;
+      color: $white;
+      background-color: $white;
+    }
+
+    &-image {
+      position: absolute;
+      bottom: -17rem;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin-top: 1.9rem;
+    justify-content: center;
+    margin-bottom: -8%;
+    .bestPizza__image-mini {
+      position: relative;
+      width: 25%;
+      right: -20%;
+      margin-top: 28%;
+    }
+    .bestPizza__image-big {
+      position: absolute;
+      width: 50%;
+      right: 22%;
+    }
+  }
+}

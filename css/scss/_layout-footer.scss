@@ -1,0 +1,153 @@
+.footer {
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: $black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $green;
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    margin: 13.8rem 2% 18.8rem 2%;
+
+    @media ($desctop) {
+      flex-wrap: wrap;
+      margin: 13.8rem 2% 13.8rem 2%;
+    }
+
+    @media ($tablet) {
+      margin: 13.8rem 2% 8.8rem 2%;
+    }
+
+    @media ($mobile) {
+      margin: 4.8rem 2% 4.8rem 2%;
+    }
+  }
+
+  &__title {
+    font-family: $secondaryFont;
+    font-size: 3rem;
+    text-align: left;
+    color: $black;
+    margin-bottom: 3.8rem;
+
+    @media ($mobile) {
+      font-size: 2.75rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__description {
+    font-family: $secondaryFont;
+    font-size: 2.35rem;
+    text-align: left;
+    color: $black;
+    margin-bottom: 3.5rem;
+
+    @media ($mobile) {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    min-width: 35rem;
+    margin-right: 2.8rem;
+
+    @media ($desctop) {
+      margin-right: 0;
+    }
+
+    @media ($mobile) {
+      margin-right: 0;
+      min-width: 30rem;
+    }
+
+    &-item__icon {
+      @media ($mobile) {
+        text-align: center;
+      }
+      a {
+        font-size: 6rem;
+        font-family: $iconFont;
+        letter-spacing: 1.6rem;
+        text-decoration: none;
+        color: $black;
+        line-height: 1.15;
+
+        @media ($mobile) {
+          font-size: 6rem;
+          letter-spacing: 1rem;
+        }
+      }
+
+      a:hover {
+        color: darken($white, 20%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+
+    @media ($desctop) {
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    @media ($mobile) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    margin-right: 2.8rem;
+
+    @media ($desctop) {
+      margin: 5rem 0 0 0;
+    }
+
+    @media ($mobile) {
+      margin: 2rem 0 0 0;
+    }
+    &-list {
+      min-width: 22rem;
+
+      @media ($mobile) {
+        min-width: 18rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+          margin: 0 0 2rem 0;
+
+          @media screen {
+            margin: 0 0 1rem 0;
+          }
+        }
+
+        li:last-child {
+          margin: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  &__nav:last-child {
+    margin-right: 0;
+  }
+}

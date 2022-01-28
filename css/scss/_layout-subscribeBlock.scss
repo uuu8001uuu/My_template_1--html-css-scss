@@ -1,0 +1,98 @@
+section.subscribeBlock {
+  width: 100%;
+  background-color: $dark-grey;
+}
+
+.subscribeBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &__title {
+    font-family: $mainFont;
+    font-size: 7.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    margin: 23.6rem 0 7rem 0;
+    z-index: 1;
+
+    @media ($desctop) {
+      font-size: 6.4rem;
+      margin: 13.6rem 0 7rem 0;
+    }
+
+    @media ($tablet) {
+      font-size: 5.4rem;
+      margin: 8.6rem 0 7rem 0;
+    }
+
+    @media ($mobile) {
+      font-size: 2.75rem;
+      margin: 6.6rem 0 3rem 0;
+    }
+  }
+
+  &__description {
+    font-family: $mainFont;
+    font-size: 2.95rem;
+    text-align: center;
+    color: $white;
+    margin: 0 17% 8.4rem 17%;
+    z-index: 1;
+
+    @media ($mobile) {
+      font-size: 1.8rem;
+      margin: 0 7% 3.4rem 7%;
+    }
+  }
+
+  &__input {
+    margin: 0 0 23.1rem 0;
+    text-align: center;
+    z-index: 1;
+
+    @media ($desctop) {
+      margin: 0 0 20.1rem 0;
+    }
+
+    @media ($tablet) {
+      margin: 0 0 13.1rem 0;
+    }
+
+    @media ($mobile) {
+      margin: 0 0 8.1rem 0;
+    }
+
+    .subscribe {
+      display: flex;
+      justify-content: center;
+      margin: 0 5% 0 5%;
+      width: 90%;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -7rem;
+    z-index: 0;
+
+    @media ($desctop) {
+      bottom: -9rem;
+    }
+
+    @media ($tablet) {
+      bottom: -13rem;
+    }
+
+    @media ($mobile) {
+      bottom: -5rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

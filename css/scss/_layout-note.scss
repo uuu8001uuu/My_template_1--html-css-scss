@@ -1,0 +1,77 @@
+section.note {
+  width: 100%;
+  background-color: $dark-grey;
+
+  .note {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-family: $beautifulFont;
+      font-size: 7.55rem;
+      text-align: center;
+      color: $white;
+
+      @media ($desctop) {
+        font-size: 6.55rem;
+      }
+
+      @media ($tablet) {
+        font-size: 5.55rem;
+      }
+
+      @media ($mobile) {
+        font-size: 2.75rem;
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 5% 0 5%;
+      font-family: $secondaryFont;
+      font-size: 1.65rem;
+      line-height: 1.58;
+      color: $white;
+
+      :nth-child(1) {
+        padding-right: 3.3rem;
+        margin-bottom: 3rem;
+
+        @media ($mobile) {
+          padding-right: 0rem;
+        }
+      }
+
+      :nth-child(2) {
+        padding-left: 3.3rem;
+
+        @media ($mobile) {
+          padding-left: 0rem;
+        }
+      }
+
+      @media ($mobile) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__button {
+      text-align: center;
+      margin: 7.5rem 0 7.1rem 0;
+
+      @media ($desctop) {
+        margin: 6.5rem 0 6.1rem 0;
+      }
+
+      @media ($tablet) {
+        margin: 4.5rem 0 4.1rem 0;
+      }
+
+      @media ($mobile) {
+        margin: 2.5rem 0 2.1rem 0;
+      }
+    }
+  }
+}

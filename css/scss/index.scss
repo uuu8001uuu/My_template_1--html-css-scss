@@ -1,0 +1,20 @@
+@import "./fonts";
+@import "./vars";
+@import "./reset";
+@import "./mixins";
+@import "./uikit";
+@import "./layout-header";
+@import "./layout-post";
+@import "./layout-note";
+@import "./layout-interesting";
+@import "./layout-bestPizza";
+@import "./layout-review";
+@import "./layout-subscribeBlock";
+@import "./layout-footer";
+
+.container {
+  width: 100%;
+  max-width: 145rem;
+  margin: 0 auto;
+  // background-color: rgb(191, 245, 90);
+}
