@@ -1,3 +1,3 @@
-I created template in Visual Studio Code.
+You can view the appearance of the template by link https://uuu8001uuu.github.io/My_template_1--html-css-scss/
 
-If you see incorrect html projects displayed, you need to open Visual Studio Code and start the live server.
+The teplate was created so that it was rubber. The main difficulty is that when changing the size of the screen, the pictures worked well.

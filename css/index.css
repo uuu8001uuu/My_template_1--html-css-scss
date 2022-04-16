@@ -1,27 +1,27 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("../../Fonts/opensans-webfont.woff2") format("woff2"), url("../../Fonts/opensans-webfont.woff") format("woff"), url("../../fonts/opensans-webfont.ttf") format("truetype");
+  src: url("../fonts/opensans-webfont.woff2") format("woff2"), url("../fonts/opensans-webfont.woff") format("woff"), url("../fonts/opensans-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Reey";
-  src: url("../../Fonts/reey-regular-webfont.woff2") format("woff2"), url("../../Fonts/reey-regular-webfont.woff") format("woff"), url("../../fonts/reey-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/reey-regular-webfont.woff2") format("woff2"), url("../fonts/reey-regular-webfont.woff") format("woff"), url("../fonts/reey-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../Fonts/montserrat-variablefont_wght-webfont.woff2") format("woff2"), url("../../Fonts/montserrat-variablefont_wght-webfont.woff") format("woff"), url("../../fonts/montserrat-variablefont_wght-webfont.ttf") format("truetype");
+  src: url("../fonts/montserrat-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/montserrat-variablefont_wght-webfont.woff") format("woff"), url("../fonts/montserrat-variablefont_wght-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "socialico";
-  src: url("../../Fonts/socialico-webfont.woff2") format("woff2"), url("../../Fonts/socialico-webfont.woff") format("woff"), url("../../Fonts/socialico-webfont.ttf") format("truetype");
+  src: url("../fonts/socialico-webfont.woff2") format("woff2"), url(".../fonts/socialico-webfont.woff") format("woff"), url("../fonts/socialico-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -132,7 +132,7 @@ h3 {
   border: none;
   font-size: 2.4rem;
   padding: 0 5.5rem 0 2rem;
-  background: url(../../image/header-research.png) no-repeat right;
+  background: url(../image/header-research.png) no-repeat right;
   background-size: 2.5rem;
   background-position: calc( 100% - 2.5rem);
   background-color: #fefefe;
@@ -173,14 +173,14 @@ h3 {
 
 .post-item:hover {
   background-color: #b44215;
-  background-image: linear-gradient(45deg, #802086 0%, #50db7a 52%, #250846 90%);
+  background-image: linear-gradient(45deg, #f8fbf8 0%, #caead4 52%, #e9f5fc 90%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
           box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   color: #fefefe;
 }
 
 .post-item:hover * {
-  color: #fefefe;
+  color: #2e3034;
 }
 
 .post-item__image {
@@ -331,7 +331,7 @@ h3 {
           flex-direction: column;
   max-width: 145rem;
   margin: 0 auto;
-  background: url("../../image/header-Background.png");
+  background: url("../image/header-Background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1156,7 +1156,7 @@ section.note .note__button {
           justify-content: center;
   max-width: 145rem;
   margin: 0 auto;
-  background: url("../../image/header-Background.png");
+  background: url("../image/header-Background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
